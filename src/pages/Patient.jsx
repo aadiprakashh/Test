@@ -109,13 +109,39 @@ const Patient = () => {
     patient_img: jhon,
     age: 34,
     gender: "Male",
-
     phone: "+1234567890",
     email: "johndoe@example.com",
-    medical_history: {
-      allergies: "Penicillin",
-      chronic_conditions: "Diabetes",
-      medications: ["Metformin"],
+    medical_history: [
+      "Tooth sensitivity",
+      "Gum disease",
+      "Allergic to penicillin",
+    ],
+    dental_history: [
+      {
+        treatment: "Gum Disease",
+        date: "2023-06-15",
+        dentist: "Dr. Smith",
+        description: "Inflammation of gum tissue.",
+        treatment_status: "Under Observation",
+      },
+      {
+        treatment: "Tooth Decay",
+        date: "2023-08-20",
+        description: "Breakdown of enamel surface.",
+        dentist: "Dr. Clark",
+        treatment_status: "Cured",
+      },
+      {
+        treatment: "Cavity",
+        date: "2023-08-20",
+        dentist: "Dr. Clark",
+        description: "Decay causing tooth holes.",
+        treatment_status: "Inactive",
+      },
+    ],
+    insurance: {
+      provider: "HealthFirst",
+      policy_number: "HF1234567890",
     },
     last_dental_visit: "2024-12-10",
     diagnosis: "Cavity in upper right molar",
@@ -123,6 +149,8 @@ const Patient = () => {
     next_appointment: "2025-01-25",
     notes: "Patient complains of sensitivity to cold.",
     dentist_name: "Dr. Alice Carter",
+    current_issue: "Severe tooth pain",
+    doctor: "Dr. Smith",
   });
 
   return (
@@ -139,7 +167,11 @@ const Patient = () => {
                 setUser(patient);
               }}
             >
-              <img src={patient.patient_img} alt={patient.name} className="w-10 h-10 rounded-full" />
+              <img
+                src={patient.patient_img}
+                alt={patient.name}
+                className="w-10 h-10 rounded-full"
+              />
               <div className="ml-3 flex-1">
                 <div className="text-sm font-medium text-gray-900">
                   {patient.name}
@@ -226,7 +258,33 @@ const Patient = () => {
                 </tr>
               </thead>
               <tbody className="text-sm">
-                <tr className="border-t border-gray-200">
+                {user.dental_history.map((reason, index) => (
+                  <tr key={index} className="border-t border-gray-200">
+                    <td className="py-4">{reason.treatment}</td>
+                    <td className="py-4 text-gray-500">{reason.description}</td>
+                    <td className="py-4">
+                    
+                      <span
+                        className={`badge ${
+                          reason.treatment_status === "Cured"
+                            ? "badge-cured"
+                            : reason.treatment_status === "Under Observation"
+                            ? "badge-under-observation"
+                            : reason.treatment_status === "Inactive"
+                            ? "badge-inactive"
+                            : reason.treatment_status === "Planned"
+                            ? "badge-planned"
+                            : reason.treatment_status === "In Progress"
+                            ? "badge-in-progress"
+                            : "badge-ongoing"
+                        }`}
+                      >
+                        {reason.treatment_status}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+                {/* <tr className="border-t border-gray-200">
                   <td className="py-4">Hypertension</td>
                   <td className="py-4 text-gray-500">
                     Chronic high blood pressure
@@ -236,8 +294,9 @@ const Patient = () => {
                       Under Observation
                     </span>
                   </td>
-                </tr>
-                <tr className="border-t border-gray-200">
+                </tr> */}
+
+                {/* <tr className="border-t border-gray-200">
                   <td className="py-4">Type 2 Diabetes</td>
                   <td className="py-4 text-gray-500">
                     Insulin resistance and elevated blood sugar
@@ -258,7 +317,7 @@ const Patient = () => {
                       Inactive
                     </span>
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
