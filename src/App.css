@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    /* CSS HEX */
+--turquoise: #01F0D0ff;
+--bice-blue: #016BA9ff;
+--emerald: #0BD984ff;
+--maya-blue: #6DC0ECff;
+}
+.menu-item{
+    padding: 0.4rem 0.9rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in;
+}
+.menu-item:hover, .active{
+    background-color: var(--turquoise);
+    /* color: white; */
+}
+.menu:hover .active:not(:hover){
+    background: none;
+}

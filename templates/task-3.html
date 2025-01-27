@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Task Assignment Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans">    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-auto" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo">                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Tasks</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Projects</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Calendar</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button type="button" class="relative p-2 text-gray-400 hover:text-gray-500">                        <span class="sr-only">Notifications</span>
+                        <i class="fas fa-bell"></i>
+                        <span class="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-400 ring-2 ring-white"></span>
+                    </button>
+                    <div class="ml-3 relative">
+                        <div>
+                            <button type="button" class="flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom" id="user-menu-button">                                <img class="h-8 w-8 rounded-full" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young business person with a friendly smile, wearing smart casual attire, against a neutral background. The image should be well-lit and cropped to focus on the face and shoulders&width=96&height=96&orientation=squarish&flag=787197a1-fd2d-4c66-af1a-171bb58c31ca" alt="">                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>        </div>
+    </nav>
+
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <div class="sm:flex sm:items-center">                <div class="sm:flex-auto">
+                    <h1 class="text-2xl font-semibold text-gray-900">Task Management</h1>                    <p class="mt-2 text-sm text-gray-700">Create, assign and track tasks across your team.</p>
+                </div>                <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+                    <button type="button" class="!rounded-button inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-custom hover:bg-custom/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom">                        <i class="fas fa-plus -ml-1 mr-2"></i>
+                        New Task
+                    </button>
+                </div>            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 lg:col-span-8">                <div class="bg-white shadow rounded-lg p-6 mb-6">
+                    <div class="flex items-center space-x-4 mb-6">                        <div class="flex-1">
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">                                    <i class="fas fa-search text-gray-400"></i>
+                                </div>
+                                <input type="text" class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-custom focus:border-custom sm:text-sm" placeholder="Search tasks...">                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <select class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-custom focus:border-custom sm:text-sm rounded-md">                                <option>All Priority</option>
+                                <option>High</option>
+                                <option>Medium</option>
+                                <option>Low</option>
+                            </select>
+                            <select class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-custom focus:border-custom sm:text-sm rounded-md">                                <option>All Status</option>
+                                <option>To Do</option>
+                                <option>In Progress</option>
+                                <option>Completed</option>
+                            </select>
+                        </div>                    </div>
+
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">                            <h3 class="font-medium text-gray-900 mb-4">To Do</h3>
+                            <div class="space-y-4">                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="flex justify-between items-start">                                        <h4 class="font-medium text-gray-900">Design new landing page</h4>
+                                        <span class="px-2 py-1 text-xs font-medium rounded-full bg-red-100 text-red-800">High</span>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Create a modern and responsive landing page design for the new product launch.</p>
+                                    <div class="mt-4 flex items-center justify-between">                                        <div class="flex -space-x-2">
+                                            <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young business woman with a confident expression, wearing business attire, against a clean studio background&width=48&height=48&orientation=squarish&flag=3e52c2fb-724b-4929-a249-91c63fbc5684" alt="">                                            <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a middle-aged business man with glasses, wearing a suit, against a neutral background&width=48&height=48&orientation=squarish&flag=febf75ae-dde2-449b-a9a5-8ca57e31ebb5" alt="">                                        </div>
+                                        <span class="text-sm text-gray-500">Due in 3 days</span>                                    </div>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">                                    <div class="flex justify-between items-start">
+                                        <h4 class="font-medium text-gray-900">Update documentation</h4>
+                                        <span class="px-2 py-1 text-xs font-medium rounded-full bg-yellow-100 text-yellow-800">Medium</span>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Review and update the API documentation with new endpoints.</p>
+                                    <div class="mt-4 flex items-center justify-between">                                        <div class="flex -space-x-2">
+                                            <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young business person with a friendly smile, wearing smart casual attire, against a light background&width=48&height=48&orientation=squarish&flag=f8a10a08-2e0c-4b24-acfb-333c64b839ab" alt="">                                        </div>
+                                        <span class="text-sm text-gray-500">Due in 5 days</span>                                    </div>
+                                </div>
+                            </div>
+                        </div>                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-gray-900 mb-4">In Progress</h3>
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-lg shadow-sm">                                    <div class="flex justify-between items-start">
+                                        <h4 class="font-medium text-gray-900">Implement user authentication</h4>
+                                        <span class="px-2 py-1 text-xs font-medium rounded-full bg-red-100 text-red-800">High</span>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Add OAuth2 authentication and user session management.</p>
+                                    <div class="mt-4">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">                                            <div class="bg-custom rounded-full h-2" style="width: 60%"></div>
+                                        </div>                                    </div>
+                                    <div class="mt-4 flex items-center justify-between">                                        <div class="flex -space-x-2">
+                                            <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young developer with a serious expression, wearing casual attire, against a modern office background&width=48&height=48&orientation=squarish&flag=0ee4a8f9-1dde-4fc0-b62d-622d4748fc3f" alt="">                                        </div>
+                                        <span class="text-sm text-gray-500">Due tomorrow</span>                                    </div>
+                                </div>
+                            </div>
+                        </div>                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-gray-900 mb-4">Completed</h3>
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-lg shadow-sm opacity-75">                                    <div class="flex justify-between items-start">
+                                        <h4 class="font-medium text-gray-900">Bug fixes for v1.2.0</h4>
+                                        <span class="px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-800">Completed</span>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Fixed critical bugs reported in the latest release.</p>
+                                    <div class="mt-4">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">                                            <div class="bg-green-500 rounded-full h-2 w-full"></div>
+                                        </div>                                    </div>
+                                    <div class="mt-4 flex items-center justify-between">                                        <div class="flex -space-x-2">
+                                            <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a software engineer with a friendly expression, wearing casual tech company attire, against a modern office background&width=48&height=48&orientation=squarish&flag=0c15aae8-d89d-47c5-b357-f5de46b2e702" alt="">                                        </div>
+                                        <span class="text-sm text-gray-500">Completed yesterday</span>                                    </div>
+                                </div>
+                            </div>
+                        </div>                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-12 lg:col-span-4">
+                <div class="bg-white shadow rounded-lg p-6 mb-6">                    <h3 class="text-lg font-medium text-gray-900 mb-4">Project Overview</h3>
+                    <div class="space-y-4">                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">                                <div class="text-sm font-medium text-gray-500">Total Tasks</div>
+                                <div class="mt-1 text-2xl font-semibold text-gray-900">24</div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="text-sm font-medium text-gray-500">Completed</div>
+                                <div class="mt-1 text-2xl font-semibold text-gray-900">16</div>
+                            </div>                        </div>
+                        <div id="taskProgress" style="height: 300px;"></div>
+                    </div>                </div>
+
+                <div class="bg-white shadow rounded-lg p-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Recent Activity</h3>
+                    <div class="flow-root">
+                        <ul class="-mb-8">
+                            <li>                                <div class="relative pb-8">
+                                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+                                    <div class="relative flex space-x-3">
+                                        <div>
+                                            <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white">                                                <i class="fas fa-check text-white"></i>
+                                            </span>                                        </div>
+                                        <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">                                            <div>
+                                                <p class="text-sm text-gray-500">Task completed: <span class="font-medium text-gray-900">Bug fixes for v1.2.0</span></p>
+                                            </div>                                            <div class="text-right text-sm whitespace-nowrap text-gray-500">
+                                                <time datetime="2024-02-14">1h ago</time>
+                                            </div>
+                                        </div>
+                                    </div>                                </div>
+                            </li>
+                            <li>
+                                <div class="relative pb-8">                                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>                                    <div class="relative flex space-x-3">
+                                        <div>
+                                            <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-white">                                                <i class="fas fa-user-plus text-white"></i>
+                                            </span>                                        </div>
+                                        <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">                                            <div>
+                                                <p class="text-sm text-gray-500">New task assigned to <span class="font-medium text-gray-900">Sarah Chen</span></p>
+                                            </div>                                            <div class="text-right text-sm whitespace-nowrap text-gray-500">
+                                                <time datetime="2024-02-14">3h ago</time>
+                                            </div>
+                                        </div>
+                                    </div>                                </div>
+                            </li>
+                            <li>
+                                <div class="relative">                                    <div class="relative flex space-x-3">
+                                        <div>
+                                            <span class="h-8 w-8 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white">                                                <i class="fas fa-comment text-white"></i>
+                                            </span>                                        </div>
+                                        <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">                                            <div>
+                                                <p class="text-sm text-gray-500">Comment added to <span class="font-medium text-gray-900">Design new landing page</span></p>
+                                            </div>                                            <div class="text-right text-sm whitespace-nowrap text-gray-500">
+                                                <time datetime="2024-02-14">6h ago</time>
+                                            </div>
+                                        </div>
+                                    </div>                                </div>
+                            </li>
+                        </ul>
+                    </div>                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chartDom = document.getElementById('taskProgress');
+        const myChart = echarts.init(chartDom);
+        const option = {
+            animation: false,
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                bottom: '5%',
+                left: 'center'
+            },
+            series: [
+                {
+                    name: 'Task Status',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 10,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '20',
+                            fontWeight: 'bold'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: [
+                        { value: 8, name: 'To Do', itemStyle: { color: '#9CA3AF' } },
+                        { value: 4, name: 'In Progress', itemStyle: { color: '#4F46E5' } },
+                        { value: 12, name: 'Completed', itemStyle: { color: '#10B981' } }
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option);
+        window.addEventListener('resize', myChart.resize);
+    </script></body>
+</html>

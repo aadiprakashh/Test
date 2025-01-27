@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Task Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">                        <img class="h-8 w-auto" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo">
+                    </div>                </div>
+                <div class="flex items-center">
+                    <div class="relative">
+                        <button class="p-2 text-gray-400 hover:text-gray-500 relative">                            <i class="fas fa-bell text-xl"></i>
+                            <span class="absolute top-1 right-1 block h-2 w-2 rounded-full bg-red-400"></span>
+                        </button>
+                    </div>
+                    <div class="ml-4 flex items-center">
+                        <img class="h-8 w-8 rounded-full" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young business person with a friendly smile, wearing formal attire, against a neutral background&width=100&height=100&orientation=squarish&flag=c6edf942-765b-4b5d-8b7c-05d1a59c9360" alt="User">                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">        <div class="mb-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-lg font-semibold mb-4">Create New Task</h2>
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>                            <label class="block text-sm font-medium text-gray-700">Task Name</label>
+                            <input type="text" class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring-custom !rounded-button" placeholder="Enter task name">                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Assignees</label>
+                            <select multiple class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring-custom !rounded-button">                                <option>John Smith</option>
+                                <option>Sarah Johnson</option>
+                                <option>Michael Brown</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Due Date</label>
+                            <input type="date" class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring-custom !rounded-button">                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Priority</label>
+                            <select class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring-custom !rounded-button">                                <option>High</option>
+                                <option>Medium</option>
+                                <option>Low</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">                            <label class="block text-sm font-medium text-gray-700">Description</label>
+                            <textarea rows="3" class="mt-1 block w-full border-gray-300 focus:border-custom focus:ring-custom !rounded-button" placeholder="Enter task description"></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="bg-custom text-white px-4 py-2 !rounded-button hover:bg-custom/90">                            <i class="fas fa-plus mr-2"></i>Create Task
+                        </button>
+                    </div>                </form>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <div class="bg-white rounded-lg shadow p-6">                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-lg font-semibold">Task Overview</h2>                    <div class="flex space-x-4">
+                        <div id="taskChart" style="width: 120px; height: 120px;"></div>
+                        <div class="flex flex-col justify-center">
+                            <div class="text-sm text-gray-600">Total Tasks: 24</div>
+                            <div class="text-sm text-gray-600">Completed: 16</div>
+                            <div class="text-sm text-gray-600">In Progress: 5</div>
+                            <div class="text-sm text-gray-600">To Do: 3</div>
+                        </div>                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">            <div class="bg-white rounded-lg shadow p-4">
+                <h3 class="font-semibold text-gray-700 mb-4">To Do</h3>                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-medium">Website Redesign</h4>
+                        <p class="text-sm text-gray-600 mt-2">Update the company website with new branding</p>                        <div class="flex items-center mt-3">
+                            <div class="flex -space-x-2">
+                                <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young business person with a friendly smile, wearing formal attire, against a neutral background&width=100&height=100&orientation=squarish&flag=d56c7eaf-baba-49f0-9dc9-fb306b925ca5" alt="">                                <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a middle-aged business woman with a confident expression, wearing a blazer, against a neutral background&width=100&height=100&orientation=squarish&flag=4fcd8132-7f61-4941-b8ed-ba2e5227afac" alt="">                            </div>
+                            <span class="ml-4 text-sm text-gray-500">Due: Aug 15</span>
+                        </div>                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-4">
+                <h3 class="font-semibold text-gray-700 mb-4">In Progress</h3>
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-medium">Mobile App Development</h4>
+                        <p class="text-sm text-gray-600 mt-2">Implement new features for the mobile application</p>                        <div class="mt-3">
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">                                <span>Progress</span>
+                                <span>65%</span>
+                            </div>                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-custom h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-3">                            <div class="flex -space-x-2">
+                                <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young business person with a friendly smile, wearing formal attire, against a neutral background&width=100&height=100&orientation=squarish&flag=21ab555e-05c0-4f22-ba08-159391976c3b" alt="">                            </div>
+                            <span class="ml-4 text-sm text-gray-500">Due: Aug 20</span>
+                        </div>                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-4">
+                <h3 class="font-semibold text-gray-700 mb-4">Completed</h3>
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg p-4 bg-gray-50">                        <h4 class="font-medium line-through text-gray-500">User Research</h4>
+                        <p class="text-sm text-gray-500 mt-2">Conduct user interviews and analyze feedback</p>
+                        <div class="flex items-center mt-3">
+                            <div class="flex -space-x-2">                                <img class="h-6 w-6 rounded-full ring-2 ring-white" src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a middle-aged business woman with a confident expression, wearing a blazer, against a neutral background&width=100&height=100&orientation=squarish&flag=520021aa-cda6-4feb-b918-1f14efb74bd4" alt="">                            </div>
+                            <span class="ml-4 text-sm text-gray-500">Completed: Aug 10</span>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>        const chartDom = document.getElementById('taskChart');
+        const myChart = echarts.init(chartDom);
+        const option = {
+            animation: false,
+            series: [{
+                type: 'pie',
+                radius: ['60%', '80%'],
+                avoidLabelOverlap: false,
+                label: {
+                    show: false
+                },
+                data: [
+                    { value: 16, name: 'Completed', itemStyle: { color: '#6366f1' } },
+                    { value: 5, name: 'In Progress', itemStyle: { color: '#93c5fd' } },
+                    { value: 3, name: 'To Do', itemStyle: { color: '#e5e7eb' } }
+                ]
+            }]
+        };
+        myChart.setOption(option);
+    </script></body>
+</html>
