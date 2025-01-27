@@ -1,0 +1,1 @@
+@tailwind base;@tailwind components;@tailwind utilities;:root{--turquoise: #01F0D0ff;--bice-blue: #016BA9ff;--emerald: #0BD984ff;--maya-blue: #6DC0ECff}.menu-item{padding:.4rem .9rem;border-radius:2rem;transition:all .3s ease-in}.menu-item:hover,.active{background-color:var(--turquoise)}.menu:hover .active:not(:hover){background:none}
