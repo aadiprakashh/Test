@@ -13,7 +13,7 @@ import Patient from './pages/Patient';
 import Admin from './pages/Admin';
 const App = () => {
 return(
-    <Router basename='/Test'>
+    <Router>
         <Header/>
         <Routes>
             <Route path="/" element={<Admin/>}/>
