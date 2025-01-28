@@ -103,7 +103,7 @@ const Patient = () => {
     };
   }, []);
 
-  const [user, setUser] = useState({
+  const [user, setUser] = useState(  {
     patient_id: "P001",
     name: "John Doe",
     patient_img: jhon,
@@ -151,7 +151,13 @@ const Patient = () => {
     dentist_name: "Dr. Alice Carter",
     current_issue: "Severe tooth pain",
     doctor: "Dr. Smith",
-  });
+    respiratory_rate:20,
+    respiratory_status:'Normal',
+    temperature:98.6,
+    temperature_status:'Normal',
+    heart_rate:78,
+    heart_rate_status:'Lower than Average',
+  },);
 
   return (
     <div className="flex">
@@ -213,8 +219,8 @@ const Patient = () => {
               </div>
               <div className="text-right">
                 <div className="text-sm text-gray-500">Respiratory Rate</div>
-                <div className="text-2xl font-semibold">20 bpm</div>
-                <div className="text-sm text-gray-500">Normal</div>
+                <div className="text-2xl font-semibold">{user.respiratory_rate} bpm</div>
+                <div className="text-sm text-gray-500">{user.respiratory_status}</div>
               </div>
             </div>
           </div>
@@ -226,8 +232,8 @@ const Patient = () => {
               </div>
               <div className="text-right">
                 <div className="text-sm text-gray-500">Temperature</div>
-                <div className="text-2xl font-semibold">98.6°F</div>
-                <div className="text-sm text-gray-500">Normal</div>
+                <div className="text-2xl font-semibold">{user.temperature}°F</div>
+                <div className="text-sm text-gray-500">{user.temperature_status}</div>
               </div>
             </div>
           </div>
@@ -239,8 +245,8 @@ const Patient = () => {
               </div>
               <div className="text-right">
                 <div className="text-sm text-gray-500">Heart Rate</div>
-                <div className="text-2xl font-semibold">78 bpm</div>
-                <div className="text-sm text-gray-500">Lower than Average</div>
+                <div className="text-2xl font-semibold">{user.heart_rate} bpm</div>
+                <div className="text-sm text-gray-500">{user.heart_rate_status}</div>
               </div>
             </div>
           </div>
@@ -377,7 +383,7 @@ const Patient = () => {
               <div className="ml-3">
                 <div className="text-sm text-gray-500">Insurance Provider</div>
                 <div className="text-sm font-medium">
-                  Sunrise Health Assurance
+                  {user.insurance.provider}
                 </div>
               </div>
             </div>
