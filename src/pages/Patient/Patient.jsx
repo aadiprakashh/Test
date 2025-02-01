@@ -1,6 +1,7 @@
 // import { useState, useEffect, useRef } from "react";
 import { useState } from "react";
 import { patients } from "../../data";
+import Card from "../../components/Card";
 
 const Patient = () => {
 
@@ -30,82 +31,54 @@ const Patient = () => {
 
   return (
     <main className=" w-dvw py-6 p-7 sm:px-6 lg:px-8">
+  <div className="mb-8 flex justify-between items-center">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">
+                Patient Management
+              </h1>
+              <p className="mt-1 text-sm text-gray-500">
+                Track and manage Patient details
+              </p>
+            </div>{" "}
+            <button
+                  type="button"
+                  className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-black hover:bg-custom/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom !rounded-button"
+                >
+                  <i className="fas fa-plus -ml-1 mr-2"></i>
+                  Add New Patient
+                </button>
+          </div>
+
       <div className="px-4 sm:px-0">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="bg-white overflow-hidden shadow rounded-lg">
-            <div className="p-5">
-              <div className="flex items-center">
-                <div className="flex-shrink-0 bg-custom/10 rounded-md p-3">
-                  {" "}
-                  <i className="fas fa-users text-custom text-xl"></i>
-                </div>
-                <div className="ml-5 w-0 flex-1">
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 truncate">
-                      Total Patients
-                    </dt>
-                    <dd className="text-lg font-semibold text-gray-900">
-                      2,847
-                    </dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white overflow-hidden shadow rounded-lg">
-            <div className="p-5">
-              <div className="flex items-center">
-                <div className="flex-shrink-0 bg-custom/10 rounded-md p-3">
-                  {" "}
-                  <i className="fas fa-calendar-check text-custom text-xl"></i>
-                </div>
-                <div className="ml-5 w-0 flex-1">
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 truncate">
-                      Today&apos;s Appointments
-                    </dt>
-                    <dd className="text-lg font-semibold text-gray-900">24</dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white overflow-hidden shadow rounded-lg">
-            <div className="p-5">
-              <div className="flex items-center">
-                <div className="flex-shrink-0 bg-custom/10 rounded-md p-3">
-                  {" "}
-                  <i className="fas fa-clock text-custom text-xl"></i>
-                </div>
-                <div className="ml-5 w-0 flex-1">
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 truncate">
-                      Pending Treatments
-                    </dt>
-                    <dd className="text-lg font-semibold text-gray-900">156</dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white overflow-hidden shadow rounded-lg">
-            <div className="p-5">
-              <div className="flex items-center">
-                <div className="flex-shrink-0 bg-custom/10 rounded-md p-3">
-                  {" "}
-                  <i className="fas fa-user-plus text-custom text-xl"></i>
-                </div>
-                <div className="ml-5 w-0 flex-1">
-                  <dl>
-                    <dt className="text-sm font-medium text-gray-500 truncate">
-                      New Patients (This Month)
-                    </dt>
-                    <dd className="text-lg font-semibold text-gray-900">89</dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <Card
+              bgStyle="p-3 rounded-full bg-indigo-100 text-indigo-600"
+              icon=" fa-users text-xl"
+              title="Total Patients"
+              value="2,847"
+            />
+
+<Card
+              bgStyle="p-3 rounded-full bg-green-100 text-green-600"
+              icon=" fa-calendar-check text-xl"
+              title="Today&apos;s Appointments"
+              value="24"
+            />
+
+              <Card
+              bgStyle="p-3 rounded-full bg-yellow-100 text-yellow-600"
+              icon=" fa-user-plus text-xl"
+              title="New Patients (This Month)"
+              value="89"
+            />
+
+              <Card
+              bgStyle="p-3 rounded-full bg-red-100 text-red-600"
+              icon=" fa-clock text-xl"
+              title="Pending Treatments"
+              value="156"
+            />
         </div>
       </div>
 
@@ -147,7 +120,7 @@ const Patient = () => {
                   </div>
                 </div>
               </div>
-              <div className="mt-4 sm:mt-0 sm:ml-4">
+              {/* <div className="mt-4 sm:mt-0 sm:ml-4">
                 <button
                   type="button"
                   className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-black hover:bg-custom/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom !rounded-button"
@@ -155,7 +128,7 @@ const Patient = () => {
                   <i className="fas fa-plus -ml-1 mr-2"></i>
                   Add New Patient
                 </button>
-              </div>
+              </div> */}
             </div>
 
             <div className="mt-8 flex flex-col">

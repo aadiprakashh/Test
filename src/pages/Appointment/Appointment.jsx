@@ -1,51 +1,59 @@
+import Card from "../../components/Card";
+
 const Appointment = () => {
     return(
         <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+          <div className="mb-8 flex justify-between items-center">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">
+                Appointment Management
+              </h1>
+              <p className="mt-1 text-sm text-gray-500">
+                Track and manage Appointment details
+              </p>
+            </div>{" "}
+            <button
+                  type="button"
+                  className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium text-white bg-black hover:bg-custom/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom !rounded-button"
+                >
+                  <i className="fas fa-plus -ml-1 mr-2"></i>
+                  Add Appointment
+                </button>
+          </div>
+
         <div className="grid grid-cols-4 gap-4 mb-8">
-            <div className="bg-white rounded-lg shadow p-6">
-                <div className="flex items-center">
-                    <div className="flex-shrink-0 rounded-md bg-custom/10 p-3">
-                        <i className="fas fa-calendar-check text-custom"></i>
-                    </div>
-                    <div className="ml-4">
-                        <h3 className="text-sm font-medium text-gray-900">Today&apos;s Appointments</h3>
-                        <p className="text-2xl font-semibold text-gray-700">24</p>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-white rounded-lg shadow p-6">
-                <div className="flex items-center">
-                    <div className="flex-shrink-0 rounded-md bg-green-100 p-3">
-                        <i className="fas fa-check text-green-600"></i>
-                    </div>
-                    <div className="ml-4">
-                        <h3 className="text-sm font-medium text-gray-900">Completed</h3>
-                        <p className="text-2xl font-semibold text-gray-700">12</p>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-white rounded-lg shadow p-6">
-                <div className="flex items-center">
-                    <div className="flex-shrink-0 rounded-md bg-yellow-100 p-3">
-                        <i className="fas fa-clock text-yellow-600"></i>
-                    </div>
-                    <div className="ml-4">
-                        <h3 className="text-sm font-medium text-gray-900">Pending</h3>
-                        <p className="text-2xl font-semibold text-gray-700">8</p>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-white rounded-lg shadow p-6">
-                <div className="flex items-center">
-                    <div className="flex-shrink-0 rounded-md bg-red-100 p-3">
-                        <i className="fas fa-times text-red-600"></i>
-                    </div>
-                    <div className="ml-4">
-                        <h3 className="text-sm font-medium text-gray-900">Cancelled</h3>
-                        <p className="text-2xl font-semibold text-gray-700">4</p>
-                    </div>
-                </div>
-            </div>
+
+  <Card
+              bgStyle="p-3 rounded-full bg-indigo-100 text-indigo-600"
+              icon="fa-solid fa-calendar-check text-xl"
+              title="Today's Appointment"
+              value="24"
+            />
+
+<Card
+              bgStyle="p-3 rounded-full bg-green-100 text-green-600"
+              icon="fa-solid fa-user-check text-xl"
+              title="Completed"
+              value="12"
+            />
+              <Card
+              bgStyle="p-3 rounded-full bg-yellow-100 text-yellow-600"
+              icon=" fa-clock text-xl"
+              title="Pending"
+              value="8"
+            />
+              <Card
+              bgStyle="p-3 rounded-full bg-red-100 text-red-600"
+              icon=" fa-ban text-xl"
+              title="Cancelled"
+              value="2"
+            />
+
+            
+           
+            
+            
         </div>
 
         <div className="grid grid-cols-3 gap-8">
