@@ -1,27 +1,31 @@
-
-import './App.css'
-// import PatientDashboard from './PatientDashboard';
-import Header from './components/Header';
-// import Home from './components/Home';
+import "./App.css";
+import Header from "./components/Header";
 import {
-    HashRouter as Router,
-    Routes,
-    Route,
-    // Navigate,
-  } from "react-router-dom";
-import Patient from './pages/Patient';
-import Admin from './pages/Admin';
+  HashRouter as Router,
+  Routes,
+  Route,
+  // Navigate,
+} from "react-router-dom";
+// import PatientManagement from './pages/Patient/PatientManagement';
+import Admin from "./pages/Admin/Admin";
+import Appointment from "./pages/Appointment/Appointment";
+import Patient from "./pages/Patient/Patient";
+import Graph from "./components/Graph";
 const App = () => {
-return(
+  return (
     <Router>
-        <Header/>
+      <div className="flex">
+        <Header />
         <Routes>
-            <Route path="/" element={<Admin/>}/>
-            <Route path="/patients" element={<Patient/>}/>
+          <Route path="/" element={<Admin />} />
+          <Route path="/patients" element={<Patient />} />
+
+          {/* <Route path="/patients" element={<PatientManagement/>}/> */}
+          <Route path="/appoinments" element={<Appointment />} />
         </Routes>
+      </div>
     </Router>
-   
-   
-)
-}
-export default App; 
+
+  );
+};
+export default App;

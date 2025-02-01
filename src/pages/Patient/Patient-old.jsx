@@ -1,107 +1,107 @@
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js";
 import { FaLungs, FaThermometerHalf, FaHeartbeat } from "react-icons/fa";
-import jhon from "../assets/img/jhon-doe.png";
-import { patients } from "../data";
+import jhon from "../../assets/img/jhon-doe.png";
+import { patients } from "../../data";
 
 const Patient = () => {
-  const bloodPressureChartRef = useRef(null);
+  // const bloodPressureChartRef = useRef(null);
 
-  useEffect(() => {
-    // eslint-disable-next-line no-undef
-    const bloodPressureChart = echarts.init(bloodPressureChartRef.current);
+  // useEffect(() => {
+  //   // eslint-disable-next-line no-undef
+  //   const bloodPressureChart = echarts.init(bloodPressureChartRef.current);
 
-    const option = {
-      animation: false,
-      tooltip: {
-        trigger: "axis",
-      },
-      grid: {
-        left: "3%",
-        right: "4%",
-        bottom: "3%",
-        containLabel: true,
-      },
-      xAxis: {
-        type: "category",
-        data: [
-          "Oct 2023",
-          "Nov 2023",
-          "Dec 2023",
-          "Jan 2024",
-          "Feb 2024",
-          "Mar 2024",
-        ],
-        axisLine: {
-          lineStyle: {
-            color: "#E5E7EB",
-          },
-        },
-        axisLabel: {
-          color: "#6B7280",
-        },
-      },
-      yAxis: {
-        type: "value",
-        min: 60,
-        max: 180,
-        interval: 20,
-        axisLine: {
-          show: false,
-        },
-        axisTick: {
-          show: false,
-        },
-        splitLine: {
-          lineStyle: {
-            color: "#E5E7EB",
-          },
-        },
-        axisLabel: {
-          color: "#6B7280",
-        },
-      },
-      // the graph contents
-      series: [
-        {
-          name: "Systolic",
-          type: "line",
-          smooth: true,
-          data: [120, 115, 160, 110, 150, 160],
-          itemStyle: {
-            color: "#00E5BE",
-          },
-          lineStyle: {
-            width: 3,
-          },
-          symbolSize: 8,
-        },
-        {
-          name: "Diastolic",
-          type: "line",
-          smooth: true,
-          data: [110, 65, 110, 90, 70, 78],
-          itemStyle: {
-            color: "#818CF8",
-          },
-          lineStyle: {
-            width: 3,
-          },
-          symbolSize: 8,
-        },
-      ],
-    };
+  //   const option = {
+  //     animation: false,
+  //     tooltip: {
+  //       trigger: "axis",
+  //     },
+  //     grid: {
+  //       left: "3%",
+  //       right: "4%",
+  //       bottom: "3%",
+  //       containLabel: true,
+  //     },
+  //     xAxis: {
+  //       type: "category",
+  //       data: [
+  //         "Oct 2023",
+  //         "Nov 2023",
+  //         "Dec 2023",
+  //         "Jan 2024",
+  //         "Feb 2024",
+  //         "Mar 2024",
+  //       ],
+  //       axisLine: {
+  //         lineStyle: {
+  //           color: "#E5E7EB",
+  //         },
+  //       },
+  //       axisLabel: {
+  //         color: "#6B7280",
+  //       },
+  //     },
+  //     yAxis: {
+  //       type: "value",
+  //       min: 60,
+  //       max: 180,
+  //       interval: 20,
+  //       axisLine: {
+  //         show: false,
+  //       },
+  //       axisTick: {
+  //         show: false,
+  //       },
+  //       splitLine: {
+  //         lineStyle: {
+  //           color: "#E5E7EB",
+  //         },
+  //       },
+  //       axisLabel: {
+  //         color: "#6B7280",
+  //       },
+  //     },
+  //     // the graph contents
+  //     series: [
+  //       {
+  //         name: "Systolic",
+  //         type: "line",
+  //         smooth: true,
+  //         data: [120, 115, 160, 110, 150, 160],
+  //         itemStyle: {
+  //           color: "#00E5BE",
+  //         },
+  //         lineStyle: {
+  //           width: 3,
+  //         },
+  //         symbolSize: 8,
+  //       },
+  //       {
+  //         name: "Diastolic",
+  //         type: "line",
+  //         smooth: true,
+  //         data: [110, 65, 110, 90, 70, 78],
+  //         itemStyle: {
+  //           color: "#818CF8",
+  //         },
+  //         lineStyle: {
+  //           width: 3,
+  //         },
+  //         symbolSize: 8,
+  //       },
+  //     ],
+  //   };
 
-    bloodPressureChart.setOption(option);
+  //   bloodPressureChart.setOption(option);
 
-    window.addEventListener("resize", function () {
-      bloodPressureChart.resize();
-    });
+  //   window.addEventListener("resize", function () {
+  //     bloodPressureChart.resize();
+  //   });
 
-    return () => {
-      bloodPressureChart.dispose();
-    };
-  }, []);
+  //   return () => {
+  //     bloodPressureChart.dispose();
+  //   };
+  // }, []);
 
   const [user, setUser] = useState(  {
     patient_id: "P001",
@@ -199,16 +199,16 @@ const Patient = () => {
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
             Medical History
           </h2>
-          <div className="bg-white rounded-lg shadow-lg p-6">
+          {/* <div className="bg-white rounded-lg shadow-lg p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-medium">Blood Pressure</h3>
-              <select className="border-0 text-sm text-gray-500 focus:ring-0">
+              <select className=" border-1 rounded-md text-sm  p-2">
                 <option>Last 6 months</option>
                 <option>Last year</option>
               </select>
             </div>
             <div ref={bloodPressureChartRef} className="h-64"></div>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid grid-cols-3 gap-6 mb-6">
