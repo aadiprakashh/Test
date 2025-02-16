@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import "https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js";
 import { FaLungs, FaThermometerHalf, FaHeartbeat } from "react-icons/fa";
 import jhon from "../../assets/img/jhon-doe.png";
-import { patients } from "../../data";
+import { patients } from "../../../data";
 
 const Patient = () => {
   // const bloodPressureChartRef = useRef(null);

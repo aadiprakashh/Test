@@ -65,7 +65,8 @@ const Admin = () => {
   };
 
   return (
-    <div className="flex-1 flex-col bg-gray-100">
+    <div className="flex-1 flex-col bg-gray-100 ">
+
       {/* HEADER */}
       <header className="bg-white shadow flex-1">
         <div className="max-w-8xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -86,7 +87,6 @@ const Admin = () => {
           </div>
         </div>
       </header>
-
       {/* MAIN CONTENT */}
       <main className="max-w-7xl mx-auto py-6 px-6">
         {/* STAT CARDS */}

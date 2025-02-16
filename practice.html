@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+
+        let array = ['a','b','c','d','e','asdfasdf']
+       
+        function greet() {
+            document.getElementById('demo').innerHTML = array.join(',');
+        }
+
+        
+    
+      let result =  setTimeout(greet, 1000)
+     
+
+      
+
+        
+    </script>
+</body>
+</html>

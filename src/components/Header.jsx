@@ -1,64 +1,60 @@
-// import { useState } from "react";
-// import { MdMedication } from "react-icons/md";
-// import { FaHome, FaUser, FaCalendarAlt, FaMoneyBillAlt } from 'react-icons/fa';
+
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/img/logo.png";
-// import doctor from "../assets/img/user-1.png";
+import logo from "../assets/img/newlogo.png";
 
 export default function Header() {
-  // const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();  
   const isActive = (path) => location.pathname === path;
 
   return (
-    <aside className="w-64 bg-white border-r border-gray-200 h-dvh">
+    <aside className=" w-56 bg-white border-r border-gray-200 fixed h-dvh">
         <nav className="mt-6 flex flex-col align-center gap-8">
        
-        <Link to="/" className="text-2xl justify-center font-bold text-green-500 flex items-center">
+        <Link to="/" className="text-2xl justify-center font-bold text-indigo-100 flex items-center">
           <img src={logo} alt="Logo" width={200} />
           {/* TechCare */}
         </Link>
           <div className="px-4 space-y-2">
             <Link
               to="/"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/") ? "bg-indigo-50 font-semibold text-indigo-900" : " hover:bg-gray-50"}  text-gray-600 rounded-lg`}
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"}  text-gray-600 rounded-lg`}
             >
-              <i className="fas fa-chart-line w-5 h-5 mr-3"></i>
+              <i className="fas fa-chart-line w-5 h-5 mr-3 mt-2"></i>
               Dashboard
             </Link>
             <Link
               to="/patients"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/patients") ? "bg-indigo-50 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/patients") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
             >
-              <i className="fas fa-user-group w-5 h-5 mr-3"></i>
+              <i className="fas fa-user-group w-5 h-5 mr-3 mt-2"></i>
               Patients
             </Link>
             <Link
               to="/appoinments"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/appoinments") ? "bg-indigo-50 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/appoinments") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
             >
-              <i className="fas fa-calendar-alt w-5 h-5 mr-3"></i>
+              <i className="fas fa-calendar-alt w-5 h-5 mr-3 mt-2"></i>
               Appointments
             </Link>
             <Link
-              to="#"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/treatments") ? "bg-indigo-50 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
+              to="/billing"
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/billing") || isActive("/new-invoice") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
             >
-              <i className="fas fa-file-invoice-dollar w-5 h-5 mr-3"></i>
+              <i className="fas fa-file-invoice-dollar w-5 h-5 mr-3 mt-2"></i>
               Billing
             </Link>
             <Link
-              to="#"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("#contact") ? "bg-indigo-50 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
+              to="/analytics"
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/analytics") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
             >
-              <i className="fas fa-chart-bar w-5 h-5 mr-3"></i>
+              <i className="fas fa-chart-bar w-5 h-5 mr-3 mt-2"></i>
               Analytics
             </Link>
             <Link
-              to="#"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("#contact") ? "bg-indigo-50 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
+              to="/settings"
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/settings") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
             >
-              <i className="fas fa-cog w-5 h-5 mr-3"></i>
+              <i className="fas fa-cog w-5 h-5 mr-3 mt-2"></i>
               Settings
             </Link>
           </div>
