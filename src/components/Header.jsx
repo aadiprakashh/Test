@@ -30,25 +30,25 @@ export default function Header() {
               Patients
             </Link>
             <Link
-              to="/appoinments"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/appoinments") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
+              to="/doctors"
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/doctors") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
+            >
+              <i className="fas fa-stethoscope w-5 h-5 mr-3 mt-2"></i>
+              Doctors
+            </Link>
+            <Link
+              to="/appointments"
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/appointments") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
             >
               <i className="fas fa-calendar-alt w-5 h-5 mr-3 mt-2"></i>
               Appointments
             </Link>
             <Link
               to="/billing"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/billing") || isActive("/new-invoice") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
+              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/billing") || isActive("/new-invoice") || isActive("/payment") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
             >
               <i className="fas fa-file-invoice-dollar w-5 h-5 mr-3 mt-2"></i>
               Billing
-            </Link>
-            <Link
-              to="/analytics"
-              className={`flex items-center px-4 py-2.5 text-sm font-medium ${isActive("/analytics") ? "bg-indigo-100 font-semibold text-indigo-900" : " hover:bg-gray-50"} text-gray-600 rounded-lg`}
-            >
-              <i className="fas fa-chart-bar w-5 h-5 mr-3 mt-2"></i>
-              Analytics
             </Link>
             <Link
               to="/settings"

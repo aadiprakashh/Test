@@ -68,7 +68,7 @@ const Appointment = () => {
           title="Completed"
           value={
             filterPatient.filter(
-              (pat) => pat.appointment_status === "Completed"
+              (pat) => pat.appointments.status === "Completed"
             ).length
           }
         />
@@ -77,7 +77,7 @@ const Appointment = () => {
           icon=" fa-clock text-xl"
           title="Upcoming"
           value={
-            filterPatient.filter((pat) => pat.appointment_status === "Upcoming")
+            filterPatient.filter((pat) => pat.appointments.status === "Scheduled")
               .length
           }
         />
@@ -87,7 +87,7 @@ const Appointment = () => {
           title="Cancelled"
           value={
             filterPatient.filter(
-              (pat) => pat.appointment_status === "Cancelled"
+              (pat) => pat.appointments.status === "Cancelled"
             ).length
           }
         />

@@ -4,9 +4,12 @@ import { usePatients } from "../../components/PatientContext";
 import { Link } from "react-router-dom";
 import ViewInvoice from "./ViewInvoice";
 import { useState } from "react";
+
 const Billing = () => {
   const patients = usePatients();
   const [viewInvoice, setViewInvoice] = useState(false);
+
+   const [user, setUser] = useState({});
 
   //pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -163,8 +166,8 @@ const Billing = () => {
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   {" "}
-                  <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                    Paid
+                  <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${patient.billing.total_amount === 0 ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-900'}`}>
+                    {patient.billing.total_amount === 0 ? "Paid" : "Pending"}
                   </span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
@@ -176,6 +179,7 @@ const Billing = () => {
                   <button
                     onClick={() => {
                       setViewInvoice(true);
+                      setUser(patient)
                     }}
                     className="
                     rounded px-4 py-2 
@@ -189,8 +193,6 @@ const Billing = () => {
               ))}
             </tbody>
           </table>
-        </div>
-
          {/* Pagination */}
          <div className="bg-white px-4 py-3 border-t border-gray-200 sm:px-6">
             <div className="flex items-center justify-between">
@@ -264,6 +266,8 @@ const Billing = () => {
               </div>
             </div>
           </div>
+        </div>
+
       </div>
 
       {/* <div className="mt-8 grid grid-cols-1 gap-5 lg:grid-cols-2">
@@ -273,8 +277,11 @@ const Billing = () => {
       </div> */}
 
       {viewInvoice && (
-        <ViewInvoice
-          closeModal={() => {
+        <ViewInvoice patient={user} 
+        billing={user.billing} 
+        services={user.services}
+        insurance={user.insurance}
+        closeModal={() => {
             setViewInvoice(false);
           }}
         />

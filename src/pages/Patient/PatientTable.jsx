@@ -11,7 +11,7 @@ const PatientTable = () => {
     ...new Set(patients.map((patient) => patient.appointments.treatment_status)),
   ];
 
-  console.log(treatments)
+  // console.log(treatments)
 
  
   const [status, setStatus] = useState("");
@@ -177,10 +177,14 @@ const PatientTable = () => {
                           </td> */}
                         <td className="whitespace-nowrap py-4 px-3 text-sm text-gray-500">
                           <div className="flex items-center">
-                            <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center">
-                              {/* <i className="fas fa-user text-gray-400"></i> */}
+                            {/* <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center">
+                              {/* <i className="fas fa-user text-gray-400"></i> 
                               <FaUser size={20} color="gray" />
+                            </div> */}
+                            <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center">
+                              <img src={patient.image} alt={patient.name} className=" rounded-full"/>
                             </div>
+
                             <div className="ml-4">
                               <div className="text-sm font-medium text-gray-900">
                                 {patient.name}

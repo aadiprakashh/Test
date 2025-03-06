@@ -2,13 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    /* CSS HEX */
---turquoise: #01F0D0ff;
---bice-blue: #016BA9ff;
---emerald: #0BD984ff;
---maya-blue: #6DC0ECff;
+:root {
+  /* 🎨 Primary Colors */
+  --primary-blue: #4A90E2;      /* Trust, reliability */
+  --primary-teal: #50BFA5;      /* Hygiene, freshness */
+
+  /* 🎯 Secondary Colors */
+  --secondary-mint: #A8E6CF;    /* Soft, clean look */
+  --secondary-coral: #FF6B6B;   /* Accent, urgency */
+  --secondary-sand: #F4A261;    /* Highlights */
+
+  /* 🌫️ Neutral Backgrounds */
+  --background-light: #FAF8F2;  /* Clean, medical background */
+  --background-gray: #EAEAEA;   /* Subtle contrast */
+  --text-dark: #333333;         /* Readability */
+
+  /* ✅ Status Colors */
+  --success-green: #28A745;     /* Success messages */
+  --warning-orange: #FFA500;    /* Warnings */
+  --error-red: #D9534F;         /* Errors, critical alerts */
+
+  /* 🎨 Additional Shades (Optional for UI Depth) */
+  --primary-blue-dark: #357ABD;
+  --primary-teal-dark: #3D8B76;
+  --gray-light: #F5F5F5;
+  --gray-dark: #888888;
 }
+
 .menu-item{
     padding: 0.4rem 0.9rem;
     border-radius: 2rem;

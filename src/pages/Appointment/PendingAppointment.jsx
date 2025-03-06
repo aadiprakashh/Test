@@ -41,24 +41,24 @@ const PendingAppointment = ({filterPatient, aStatus}) => {
               <div className="flex items-center text-sm text-gray-700">
                 <i className="fas fa-tooth w-5 text-custom"></i>
                 <span className="ml-2 font-medium">
-                  {patient.current_issue}
+                  {patient.appointments.procedure}
                 </span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
                 <i className="fas fa-calendar-alt w-5"></i>
-                <span className="ml-2">{patient.next_appointment}</span>
+                <span className="ml-2">{patient.appointments.status}</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
                 <i className="fas fa-clock w-5"></i>
-                <span className="ml-2">10:00 AM</span>
+                <span className="ml-2">{patient.appointments.date}</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
                 <i className="fas fa-user-md w-5"></i>
-                <span className="ml-2">{patient.dentist}</span>
+                <span className="ml-2">{patient.appointments.dentist}</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
                 <i className="fas fa-notes-medical w-5"></i>
-                <span className="ml-2">Notes: {patient.description}</span>
+                <span className="ml-2">Notes: {patient.note}</span>
               </div>
 
               {/* Priority Badges */}

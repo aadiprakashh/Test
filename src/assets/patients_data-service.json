@@ -1,0 +1,3200 @@
+[
+  {
+    "patient_id": "P001",
+    "name": "Linda Wilson",
+    "gender": "Male",
+    "age": 21,
+    "date_of_birth": "2004-10-10",
+    "phone": "+1 402-796-1326",
+    "email": "linda.wilson@example.com",
+    "address": "535 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Latex"
+      ],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A5640",
+      "date": "2025-11-17",
+      "time": "8:00 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Braces Adjustment",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-05-20",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7515",
+      "total_amount": 268.67,
+      "paid_amount": 43.41,
+      "balance_due": 225.26,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "DD452960514",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 102,
+      "insurance_remaining": 1898
+    }
+  },
+  {
+    "patient_id": "P002",
+    "name": "Maria Johnson",
+    "gender": "Female",
+    "age": 67,
+    "date_of_birth": "1958-05-08",
+    "phone": "+1 330-134-2278",
+    "email": "maria.johnson@example.com",
+    "address": "624 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes"
+      ],
+      "current_medications": [
+        "Paracetamol"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A8458",
+      "date": "2026-01-12",
+      "time": "8:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Brown",
+      "procedure": "Cavity Filling",
+      "status": "Completed",
+      "treatment_status": "Completed"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-07-23",
+      "procedure": "Teeth Cleaning",
+      "dentist": "Dr. Brown"
+    },
+    "services": [
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6838",
+      "total_amount": 146.47,
+      "paid_amount": 40.14,
+      "balance_due": 106.33,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "HF637057378",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 443,
+      "insurance_remaining": 1557
+    }
+  },
+  {
+    "patient_id": "P003",
+    "name": "John King",
+    "gender": "Male",
+    "age": 61,
+    "date_of_birth": "1964-12-22",
+    "phone": "+1 628-319-8871",
+    "email": "john.king@example.com",
+    "address": "583 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes",
+        "Tooth Sensitivity"
+      ],
+      "current_medications": [
+        "None"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A8252",
+      "date": "2025-08-24",
+      "time": "8:30 PM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Braces Adjustment",
+      "status": "Scheduled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-11-15",
+      "procedure": "Cavity Filling",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV8258",
+      "total_amount": 232.96,
+      "paid_amount": 153.78,
+      "balance_due": 79.18,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "DD604939177",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1104,
+      "insurance_remaining": 896
+    }
+  },
+  {
+    "patient_id": "P004",
+    "name": "Sarah Walker",
+    "gender": "Female",
+    "age": 19,
+    "date_of_birth": "2006-06-07",
+    "phone": "+1 527-902-1205",
+    "email": "sarah.walker@example.com",
+    "address": "317 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [
+        "Tooth Sensitivity",
+        "Gingivitis"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A7041",
+      "date": "2025-03-24",
+      "time": "8:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Lee",
+      "procedure": "Extraction",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-09-03",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      },
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6398",
+      "total_amount": 229.03,
+      "paid_amount": 215.05,
+      "balance_due": 13.98,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Cigna",
+      "insurance_policy_number": "CG621348754",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1095,
+      "insurance_remaining": 905
+    }
+  },
+  {
+    "patient_id": "P005",
+    "name": "Joseph Walker",
+    "gender": "Male",
+    "age": 37,
+    "date_of_birth": "1988-02-01",
+    "phone": "+1 760-695-9608",
+    "email": "joseph.walker@example.com",
+    "address": "938 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Latex"
+      ],
+      "previous_conditions": [
+        "Tooth Sensitivity"
+      ],
+      "current_medications": [
+        "None"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A1578",
+      "date": "2025-09-07",
+      "time": "9:30 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Martinez",
+      "procedure": "Extraction",
+      "status": "Cancelled",
+      "treatment_status": "Completed"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-12-31",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6591",
+      "total_amount": 197.17,
+      "paid_amount": 5.44,
+      "balance_due": 191.73,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "CG469159136",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1328,
+      "insurance_remaining": 672
+    }
+  },
+  {
+    "patient_id": "P006",
+    "name": "James Lewis",
+    "gender": "Female",
+    "age": 44,
+    "date_of_birth": "1981-09-05",
+    "phone": "+1 841-985-2529",
+    "email": "james.lewis@example.com",
+    "address": "373 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Pollen"
+      ],
+      "previous_conditions": [
+        "Gingivitis"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A7070",
+      "date": "2025-09-30",
+      "time": "10:00 PM",
+      "availability": "Available",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Braces Adjustment",
+      "status": "Cancelled",
+      "treatment_status": "Completed"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2025-01-26",
+      "procedure": "Extraction",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV8206",
+      "total_amount": 161.95,
+      "paid_amount": 100.66,
+      "balance_due": 61.29,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Delta Dental",
+      "insurance_policy_number": "MC755031907",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 434,
+      "insurance_remaining": 1566
+    }
+  },
+  {
+    "patient_id": "P007",
+    "name": "Maria Johnson",
+    "gender": "Female",
+    "age": 28,
+    "date_of_birth": "1997-12-03",
+    "phone": "+1 679-280-9441",
+    "email": "maria.johnson@example.com",
+    "address": "235 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A9498",
+      "date": "2025-03-08",
+      "time": "8:30 AM",
+      "availability": "Available",
+      "dentist": "Dr. Clark",
+      "procedure": "Extraction",
+      "status": "Cancelled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-08-06",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Clark"
+    },
+    "services": [
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      },
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7736",
+      "total_amount": 57.85,
+      "paid_amount": 35.49,
+      "balance_due": 22.36,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Cigna",
+      "insurance_policy_number": "MC850718660",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 151,
+      "insurance_remaining": 1849
+    }
+  },
+  {
+    "patient_id": "P008",
+    "name": "Linda Hall",
+    "gender": "Female",
+    "age": 46,
+    "date_of_birth": "1979-08-16",
+    "phone": "+1 474-401-6246",
+    "email": "linda.hall@example.com",
+    "address": "985 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Latex"
+      ],
+      "previous_conditions": [],
+      "current_medications": [
+        "Amoxicillin"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A4736",
+      "date": "2026-01-16",
+      "time": "11:00 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Brown",
+      "procedure": "Cavity Filling",
+      "status": "Completed",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-07-19",
+      "procedure": "Cavity Filling",
+      "dentist": "Dr. Brown"
+    },
+    "services": [
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6810",
+      "total_amount": 62.9,
+      "paid_amount": 40.23,
+      "balance_due": 22.67,
+      "payment_status": "Partial",
+      "payment_method": "Insurance"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "CG370522529",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1280,
+      "insurance_remaining": 720
+    }
+  },
+  {
+    "patient_id": "P009",
+    "name": "Susan Smith",
+    "gender": "Female",
+    "age": 72,
+    "date_of_birth": "1953-11-18",
+    "phone": "+1 709-201-4604",
+    "email": "susan.smith@example.com",
+    "address": "808 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes",
+        "Gum Disease"
+      ],
+      "current_medications": [
+        "Amoxicillin"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A8809",
+      "date": "2025-11-27",
+      "time": "10:00 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Extraction",
+      "status": "Completed",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-11-28",
+      "procedure": "Cavity Filling",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV5259",
+      "total_amount": 71.14,
+      "paid_amount": 13.21,
+      "balance_due": 57.93,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "CG993828816",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 592,
+      "insurance_remaining": 1408
+    }
+  },
+  {
+    "patient_id": "P010",
+    "name": "Joseph Doe",
+    "gender": "Female",
+    "age": 71,
+    "date_of_birth": "1954-08-06",
+    "phone": "+1 141-487-7114",
+    "email": "joseph.doe@example.com",
+    "address": "505 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Gingivitis",
+        "Tooth Sensitivity"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A8628",
+      "date": "2026-01-10",
+      "time": "9:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Root Canal",
+      "status": "Completed",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Cavity detected, needs filling",
+    "last_visit": {
+      "date": "2025-01-06",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7887",
+      "total_amount": 273.5,
+      "paid_amount": 175.34,
+      "balance_due": 98.16,
+      "payment_status": "Partial",
+      "payment_method": "Insurance"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "HF110668688",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 457,
+      "insurance_remaining": 1543
+    }
+  },
+  {
+    "patient_id": "P011",
+    "name": "Robert Allen",
+    "gender": "Female",
+    "age": 48,
+    "date_of_birth": "1977-07-04",
+    "phone": "+1 660-506-1157",
+    "email": "robert.allen@example.com",
+    "address": "971 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes",
+        "Tooth Sensitivity"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A5778",
+      "date": "2026-02-02",
+      "time": "10:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Clark",
+      "procedure": "Root Canal",
+      "status": "Cancelled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-10-08",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Clark"
+    },
+    "services": [
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV5310",
+      "total_amount": 126.2,
+      "paid_amount": 120.66,
+      "balance_due": 5.54,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Delta Dental",
+      "insurance_policy_number": "BC232221757",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 306,
+      "insurance_remaining": 1694
+    }
+  },
+  {
+    "patient_id": "P012",
+    "name": "Thomas Clark",
+    "gender": "Male",
+    "age": 49,
+    "date_of_birth": "1976-01-03",
+    "phone": "+1 611-156-1855",
+    "email": "thomas.clark@example.com",
+    "address": "393 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A2905",
+      "date": "2026-02-16",
+      "time": "12:30 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Extraction",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-05-12",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7395",
+      "total_amount": 78.72,
+      "paid_amount": 46.37,
+      "balance_due": 32.35,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "MC457219991",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1277,
+      "insurance_remaining": 723
+    }
+  },
+  {
+    "patient_id": "P013",
+    "name": "Sarah Davis",
+    "gender": "Female",
+    "age": 29,
+    "date_of_birth": "1996-09-20",
+    "phone": "+1 436-406-6204",
+    "email": "sarah.davis@example.com",
+    "address": "301 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Penicillin"
+      ],
+      "previous_conditions": [
+        "Gum Disease"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A8557",
+      "date": "2026-02-24",
+      "time": "10:30 PM",
+      "availability": "Available",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Braces Adjustment",
+      "status": "Cancelled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-10-20",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV5760",
+      "total_amount": 200.25,
+      "paid_amount": 44.06,
+      "balance_due": 156.19,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "MC867326919",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 938,
+      "insurance_remaining": 1062
+    }
+  },
+  {
+    "patient_id": "P014",
+    "name": "Maria Wilson",
+    "gender": "Male",
+    "age": 22,
+    "date_of_birth": "2003-11-07",
+    "phone": "+1 884-951-6607",
+    "email": "maria.wilson@example.com",
+    "address": "430 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Latex"
+      ],
+      "previous_conditions": [
+        "Diabetes"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A3259",
+      "date": "2025-11-27",
+      "time": "9:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Extraction",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-06-16",
+      "procedure": "Teeth Cleaning",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6997",
+      "total_amount": 130.79,
+      "paid_amount": 3.38,
+      "balance_due": 127.41,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Cigna",
+      "insurance_policy_number": "MC646705904",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 596,
+      "insurance_remaining": 1404
+    }
+  },
+  {
+    "patient_id": "P015",
+    "name": "Thomas Scott",
+    "gender": "Male",
+    "age": 46,
+    "date_of_birth": "1979-01-03",
+    "phone": "+1 184-127-8099",
+    "email": "thomas.scott@example.com",
+    "address": "721 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A6903",
+      "date": "2025-11-23",
+      "time": "11:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Lee",
+      "procedure": "Extraction",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-07-06",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9615",
+      "total_amount": 278.42,
+      "paid_amount": 136.25,
+      "balance_due": 142.17,
+      "payment_status": "Partial",
+      "payment_method": "Insurance"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "MC649682242",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 28,
+      "insurance_remaining": 1972
+    }
+  },
+  {
+    "patient_id": "P016",
+    "name": "Jane Davis",
+    "gender": "Female",
+    "age": 34,
+    "date_of_birth": "1991-03-10",
+    "phone": "+1 615-680-4969",
+    "email": "jane.davis@example.com",
+    "address": "775 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A7572",
+      "date": "2026-02-19",
+      "time": "9:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Martinez",
+      "procedure": "Cavity Filling",
+      "status": "Cancelled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-11-10",
+      "procedure": "Cavity Filling",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV8613",
+      "total_amount": 91.59,
+      "paid_amount": 6.68,
+      "balance_due": 84.91,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "HF837631340",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 384,
+      "insurance_remaining": 1616
+    }
+  },
+  {
+    "patient_id": "P017",
+    "name": "Charles Martinez",
+    "gender": "Female",
+    "age": 49,
+    "date_of_birth": "1976-06-15",
+    "phone": "+1 898-980-3820",
+    "email": "charles.martinez@example.com",
+    "address": "381 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Tooth Sensitivity",
+        "Gingivitis"
+      ],
+      "current_medications": [
+        "None"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A9034",
+      "date": "2025-07-01",
+      "time": "8:00 PM",
+      "availability": "Available",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Cavity Filling",
+      "status": "Cancelled",
+      "treatment_status": "Completed"
+    },
+    "note": "Braces adjustment successful",
+    "last_visit": {
+      "date": "2024-03-09",
+      "procedure": "Teeth Cleaning",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9098",
+      "total_amount": 273.27,
+      "paid_amount": 235.4,
+      "balance_due": 37.87,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "DD881781712",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1024,
+      "insurance_remaining": 976
+    }
+  },
+  {
+    "patient_id": "P018",
+    "name": "John Allen",
+    "gender": "Female",
+    "age": 73,
+    "date_of_birth": "1952-07-03",
+    "phone": "+1 465-961-8884",
+    "email": "john.allen@example.com",
+    "address": "671 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Tooth Sensitivity"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A8336",
+      "date": "2025-05-18",
+      "time": "8:30 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Brown",
+      "procedure": "Teeth Cleaning",
+      "status": "Scheduled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Braces adjustment successful",
+    "last_visit": {
+      "date": "2024-04-25",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Brown"
+    },
+    "services": [
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9391",
+      "total_amount": 55.14,
+      "paid_amount": 32.5,
+      "balance_due": 22.64,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "CG697472549",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 112,
+      "insurance_remaining": 1888
+    }
+  },
+  {
+    "patient_id": "P019",
+    "name": "John Walker",
+    "gender": "Male",
+    "age": 61,
+    "date_of_birth": "1964-10-18",
+    "phone": "+1 419-245-7997",
+    "email": "john.walker@example.com",
+    "address": "717 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [],
+      "current_medications": [
+        "Paracetamol"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A9297",
+      "date": "2025-05-14",
+      "time": "12:30 AM",
+      "availability": "Available",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Teeth Cleaning",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-06-22",
+      "procedure": "Cavity Filling",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV5136",
+      "total_amount": 158.42,
+      "paid_amount": 134.77,
+      "balance_due": 23.65,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "HF433681860",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1187,
+      "insurance_remaining": 813
+    }
+  },
+  {
+    "patient_id": "P020",
+    "name": "Maria Anderson",
+    "gender": "Male",
+    "age": 67,
+    "date_of_birth": "1958-08-11",
+    "phone": "+1 103-826-1785",
+    "email": "maria.anderson@example.com",
+    "address": "683 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Latex"
+      ],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A1550",
+      "date": "2025-06-22",
+      "time": "11:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Teeth Cleaning",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-07-20",
+      "procedure": "Cavity Filling",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6080",
+      "total_amount": 267.15,
+      "paid_amount": 247.54,
+      "balance_due": 19.61,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Delta Dental",
+      "insurance_policy_number": "HF648718528",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 223,
+      "insurance_remaining": 1777
+    }
+  },
+  {
+    "patient_id": "P021",
+    "name": "Robert Clark",
+    "gender": "Male",
+    "age": 67,
+    "date_of_birth": "1958-10-27",
+    "phone": "+1 953-747-3873",
+    "email": "robert.clark@example.com",
+    "address": "586 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [
+        "Gum Disease",
+        "Gingivitis"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A5498",
+      "date": "2025-11-26",
+      "time": "11:30 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Martinez",
+      "procedure": "Cavity Filling",
+      "status": "Cancelled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-04-16",
+      "procedure": "Cavity Filling",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6522",
+      "total_amount": 214.32,
+      "paid_amount": 1.82,
+      "balance_due": 212.5,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "CG491294933",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1052,
+      "insurance_remaining": 948
+    }
+  },
+  {
+    "patient_id": "P022",
+    "name": "Emily Lewis",
+    "gender": "Female",
+    "age": 72,
+    "date_of_birth": "1953-10-01",
+    "phone": "+1 982-811-4207",
+    "email": "emily.lewis@example.com",
+    "address": "414 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Gum Disease"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A3308",
+      "date": "2025-08-04",
+      "time": "12:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Teeth Cleaning",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-10-18",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7986",
+      "total_amount": 97.84,
+      "paid_amount": 83.43,
+      "balance_due": 14.41,
+      "payment_status": "Partial",
+      "payment_method": "Insurance"
+    },
+    "insurance": {
+      "insurance_provider": "Cigna",
+      "insurance_policy_number": "HF901220298",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 61,
+      "insurance_remaining": 1939
+    }
+  },
+  {
+    "patient_id": "P023",
+    "name": "Charles Moore",
+    "gender": "Female",
+    "age": 68,
+    "date_of_birth": "1957-03-02",
+    "phone": "+1 113-487-7644",
+    "email": "charles.moore@example.com",
+    "address": "371 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes",
+        "Tooth Sensitivity"
+      ],
+      "current_medications": [
+        "None"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A8065",
+      "date": "2025-08-30",
+      "time": "10:30 AM",
+      "availability": "Available",
+      "dentist": "Dr. Martinez",
+      "procedure": "Braces Adjustment",
+      "status": "Cancelled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Tooth sensitivity, monitor diet",
+    "last_visit": {
+      "date": "2024-06-12",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9089",
+      "total_amount": 266.17,
+      "paid_amount": 169.28,
+      "balance_due": 96.89,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "MC408609392",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1139,
+      "insurance_remaining": 861
+    }
+  },
+  {
+    "patient_id": "P024",
+    "name": "William Scott",
+    "gender": "Male",
+    "age": 20,
+    "date_of_birth": "2005-09-21",
+    "phone": "+1 939-288-1950",
+    "email": "william.scott@example.com",
+    "address": "809 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes",
+        "Gingivitis"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A7177",
+      "date": "2025-10-28",
+      "time": "8:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Teeth Cleaning",
+      "status": "Cancelled",
+      "treatment_status": "Completed"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-10-19",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6629",
+      "total_amount": 225.78,
+      "paid_amount": 70.86,
+      "balance_due": 154.92,
+      "payment_status": "Partial",
+      "payment_method": "Insurance"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "HF333807664",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 583,
+      "insurance_remaining": 1417
+    }
+  },
+  {
+    "patient_id": "P025",
+    "name": "David Walker",
+    "gender": "Female",
+    "age": 30,
+    "date_of_birth": "1995-03-24",
+    "phone": "+1 971-116-2535",
+    "email": "david.walker@example.com",
+    "address": "760 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Diabetes",
+        "Gingivitis"
+      ],
+      "current_medications": [
+        "Amoxicillin"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A7396",
+      "date": "2025-09-24",
+      "time": "11:30 AM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Extraction",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Braces adjustment successful",
+    "last_visit": {
+      "date": "2024-12-03",
+      "procedure": "Teeth Cleaning",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9138",
+      "total_amount": 121.85,
+      "paid_amount": 18.62,
+      "balance_due": 103.23,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "MC663540868",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 625,
+      "insurance_remaining": 1375
+    }
+  },
+  {
+    "patient_id": "P026",
+    "name": "Elizabeth Walker",
+    "gender": "Male",
+    "age": 38,
+    "date_of_birth": "1987-07-21",
+    "phone": "+1 318-807-9822",
+    "email": "elizabeth.walker@example.com",
+    "address": "222 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [
+        "Gum Disease"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A5446",
+      "date": "2025-06-04",
+      "time": "11:00 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Root Canal",
+      "status": "Completed",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2025-01-25",
+      "procedure": "Extraction",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7836",
+      "total_amount": 145.62,
+      "paid_amount": 104.96,
+      "balance_due": 40.66,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "HF217323742",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 992,
+      "insurance_remaining": 1008
+    }
+  },
+  {
+    "patient_id": "P027",
+    "name": "Jennifer Young",
+    "gender": "Male",
+    "age": 38,
+    "date_of_birth": "1987-01-02",
+    "phone": "+1 627-585-4499",
+    "email": "jennifer.young@example.com",
+    "address": "598 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A6059",
+      "date": "2025-03-14",
+      "time": "8:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Lee",
+      "procedure": "Extraction",
+      "status": "Scheduled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-12-20",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9765",
+      "total_amount": 191.36,
+      "paid_amount": 10.01,
+      "balance_due": 181.35,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "CG487109502",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 474,
+      "insurance_remaining": 1526
+    }
+  },
+  {
+    "patient_id": "P028",
+    "name": "Barbara Brown",
+    "gender": "Male",
+    "age": 73,
+    "date_of_birth": "1952-03-17",
+    "phone": "+1 611-513-5474",
+    "email": "barbara.brown@example.com",
+    "address": "691 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Gum Disease"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A3889",
+      "date": "2025-11-12",
+      "time": "10:00 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Extraction",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-08-20",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9262",
+      "total_amount": 196.31,
+      "paid_amount": 138.95,
+      "balance_due": 57.36,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "DD681200833",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1200,
+      "insurance_remaining": 800
+    }
+  },
+  {
+    "patient_id": "P029",
+    "name": "Elizabeth Scott",
+    "gender": "Female",
+    "age": 38,
+    "date_of_birth": "1987-01-09",
+    "phone": "+1 507-277-9482",
+    "email": "elizabeth.scott@example.com",
+    "address": "839 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Tooth Sensitivity",
+        "Hypertension"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A2952",
+      "date": "2025-10-20",
+      "time": "9:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Martinez",
+      "procedure": "Root Canal",
+      "status": "Cancelled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Cavity detected, needs filling",
+    "last_visit": {
+      "date": "2024-11-22",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9668",
+      "total_amount": 249.07,
+      "paid_amount": 168.18,
+      "balance_due": 80.89,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Cigna",
+      "insurance_policy_number": "MC890063682",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 564,
+      "insurance_remaining": 1436
+    }
+  },
+  {
+    "patient_id": "P030",
+    "name": "Linda Walker",
+    "gender": "Male",
+    "age": 75,
+    "date_of_birth": "1950-07-13",
+    "phone": "+1 229-382-6571",
+    "email": "linda.walker@example.com",
+    "address": "258 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [],
+      "current_medications": [
+        "Amoxicillin"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A5177",
+      "date": "2026-02-13",
+      "time": "8:30 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Brown",
+      "procedure": "Extraction",
+      "status": "Completed",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Cavity detected, needs filling",
+    "last_visit": {
+      "date": "2024-05-01",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Brown"
+    },
+    "services": [
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7271",
+      "total_amount": 55.61,
+      "paid_amount": 22.52,
+      "balance_due": 33.09,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "BC816594569",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 55,
+      "insurance_remaining": 1945
+    }
+  },
+  {
+    "patient_id": "P031",
+    "name": "David Johnson",
+    "gender": "Female",
+    "age": 57,
+    "date_of_birth": "1968-11-27",
+    "phone": "+1 738-207-5767",
+    "email": "david.johnson@example.com",
+    "address": "318 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Penicillin"
+      ],
+      "previous_conditions": [
+        "Diabetes"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A7638",
+      "date": "2025-12-25",
+      "time": "10:30 AM",
+      "availability": "Available",
+      "dentist": "Dr. Brown",
+      "procedure": "Braces Adjustment",
+      "status": "Completed",
+      "treatment_status": "Completed"
+    },
+    "note": "Braces adjustment successful",
+    "last_visit": {
+      "date": "2024-08-01",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Brown"
+    },
+    "services": [
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7156",
+      "total_amount": 126.05,
+      "paid_amount": 55.01,
+      "balance_due": 71.04,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "DD661218235",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1153,
+      "insurance_remaining": 847
+    }
+  },
+  {
+    "patient_id": "P032",
+    "name": "Jane King",
+    "gender": "Male",
+    "age": 66,
+    "date_of_birth": "1959-02-12",
+    "phone": "+1 750-409-4412",
+    "email": "jane.king@example.com",
+    "address": "595 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Latex"
+      ],
+      "previous_conditions": [
+        "Tooth Sensitivity",
+        "Gingivitis"
+      ],
+      "current_medications": [
+        "None"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A5476",
+      "date": "2025-10-31",
+      "time": "12:00 PM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Cavity Filling",
+      "status": "Cancelled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Braces adjustment successful",
+    "last_visit": {
+      "date": "2024-11-19",
+      "procedure": "Extraction",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      },
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9015",
+      "total_amount": 241.77,
+      "paid_amount": 19.76,
+      "balance_due": 222.01,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "DD224249674",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 456,
+      "insurance_remaining": 1544
+    }
+  },
+  {
+    "patient_id": "P033",
+    "name": "Michael Hall",
+    "gender": "Female",
+    "age": 58,
+    "date_of_birth": "1967-08-16",
+    "phone": "+1 384-270-8090",
+    "email": "michael.hall@example.com",
+    "address": "836 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Hypertension"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A1091",
+      "date": "2026-02-01",
+      "time": "10:30 PM",
+      "availability": "Available",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Cavity Filling",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2025-01-12",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6474",
+      "total_amount": 252.51,
+      "paid_amount": 114.07,
+      "balance_due": 138.44,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Cigna",
+      "insurance_policy_number": "DD395222146",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1128,
+      "insurance_remaining": 872
+    }
+  },
+  {
+    "patient_id": "P034",
+    "name": "Sarah King",
+    "gender": "Male",
+    "age": 59,
+    "date_of_birth": "1966-02-07",
+    "phone": "+1 719-324-7369",
+    "email": "sarah.king@example.com",
+    "address": "509 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Pollen"
+      ],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A9923",
+      "date": "2025-12-15",
+      "time": "11:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Martinez",
+      "procedure": "Extraction",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-12-04",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV5038",
+      "total_amount": 284.1,
+      "paid_amount": 153.9,
+      "balance_due": 130.2,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "MC465145580",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1175,
+      "insurance_remaining": 825
+    }
+  },
+  {
+    "patient_id": "P035",
+    "name": "James Anderson",
+    "gender": "Female",
+    "age": 41,
+    "date_of_birth": "1984-06-10",
+    "phone": "+1 500-269-5192",
+    "email": "james.anderson@example.com",
+    "address": "848 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Pollen"
+      ],
+      "previous_conditions": [],
+      "current_medications": [
+        "None"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A5003",
+      "date": "2025-07-02",
+      "time": "8:00 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Clark",
+      "procedure": "Braces Adjustment",
+      "status": "Cancelled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Braces adjustment successful",
+    "last_visit": {
+      "date": "2025-01-15",
+      "procedure": "Extraction",
+      "dentist": "Dr. Clark"
+    },
+    "services": [
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV5301",
+      "total_amount": 104.74,
+      "paid_amount": 94.81,
+      "balance_due": 9.93,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "BC251273013",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1234,
+      "insurance_remaining": 766
+    }
+  },
+  {
+    "patient_id": "P036",
+    "name": "James Wright",
+    "gender": "Female",
+    "age": 53,
+    "date_of_birth": "1972-09-19",
+    "phone": "+1 573-301-5124",
+    "email": "james.wright@example.com",
+    "address": "261 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Latex"
+      ],
+      "previous_conditions": [
+        "Tooth Sensitivity"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A1836",
+      "date": "2026-01-16",
+      "time": "11:00 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Martinez",
+      "procedure": "Root Canal",
+      "status": "Cancelled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-05-06",
+      "procedure": "Extraction",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      },
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7261",
+      "total_amount": 53.21,
+      "paid_amount": 13.86,
+      "balance_due": 39.35,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "HF879560285",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1080,
+      "insurance_remaining": 920
+    }
+  },
+  {
+    "patient_id": "P037",
+    "name": "Jane Allen",
+    "gender": "Male",
+    "age": 45,
+    "date_of_birth": "1980-10-25",
+    "phone": "+1 915-772-5068",
+    "email": "jane.allen@example.com",
+    "address": "653 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Pollen"
+      ],
+      "previous_conditions": [
+        "Gum Disease",
+        "Hypertension"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A9519",
+      "date": "2025-11-08",
+      "time": "8:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Root Canal",
+      "status": "Cancelled",
+      "treatment_status": "Completed"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-11-09",
+      "procedure": "Extraction",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6405",
+      "total_amount": 57.25,
+      "paid_amount": 18.8,
+      "balance_due": 38.45,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "MC171260313",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 133,
+      "insurance_remaining": 1867
+    }
+  },
+  {
+    "patient_id": "P038",
+    "name": "David Wilson",
+    "gender": "Female",
+    "age": 32,
+    "date_of_birth": "1993-06-04",
+    "phone": "+1 655-765-1614",
+    "email": "david.wilson@example.com",
+    "address": "115 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [
+        "Gum Disease"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A3196",
+      "date": "2026-02-19",
+      "time": "12:00 AM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Lee",
+      "procedure": "Root Canal",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Routine cleaning completed",
+    "last_visit": {
+      "date": "2024-10-06",
+      "procedure": "Teeth Cleaning",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      },
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9259",
+      "total_amount": 71.54,
+      "paid_amount": 33.06,
+      "balance_due": 38.48,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "MC901935246",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1468,
+      "insurance_remaining": 532
+    }
+  },
+  {
+    "patient_id": "P039",
+    "name": "Elizabeth Taylor",
+    "gender": "Female",
+    "age": 74,
+    "date_of_birth": "1951-08-14",
+    "phone": "+1 121-813-1999",
+    "email": "elizabeth.taylor@example.com",
+    "address": "915 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Pollen"
+      ],
+      "previous_conditions": [
+        "Gingivitis"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A4605",
+      "date": "2026-02-14",
+      "time": "12:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Braces Adjustment",
+      "status": "Scheduled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-08-31",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9681",
+      "total_amount": 111.48,
+      "paid_amount": 106.21,
+      "balance_due": 5.27,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "MC226337406",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1360,
+      "insurance_remaining": 640
+    }
+  },
+  {
+    "patient_id": "P040",
+    "name": "Sarah Taylor",
+    "gender": "Female",
+    "age": 62,
+    "date_of_birth": "1963-06-17",
+    "phone": "+1 111-510-3637",
+    "email": "sarah.taylor@example.com",
+    "address": "927 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Penicillin"
+      ],
+      "previous_conditions": [],
+      "current_medications": [
+        "None"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A5276",
+      "date": "2025-04-08",
+      "time": "10:00 PM",
+      "availability": "Available",
+      "dentist": "Dr. Brown",
+      "procedure": "Root Canal",
+      "status": "Scheduled",
+      "treatment_status": "Completed"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-08-12",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Brown"
+    },
+    "services": [
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV8147",
+      "total_amount": 288.09,
+      "paid_amount": 191.61,
+      "balance_due": 96.48,
+      "payment_status": "Partial",
+      "payment_method": "Insurance"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "CG239290816",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 335,
+      "insurance_remaining": 1665
+    }
+  },
+  {
+    "patient_id": "P041",
+    "name": "Linda Lewis",
+    "gender": "Female",
+    "age": 75,
+    "date_of_birth": "1950-06-19",
+    "phone": "+1 244-889-5320",
+    "email": "linda.lewis@example.com",
+    "address": "708 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Pollen"
+      ],
+      "previous_conditions": [
+        "Gum Disease",
+        "Hypertension"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A9616",
+      "date": "2026-01-16",
+      "time": "9:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Clark",
+      "procedure": "Teeth Cleaning",
+      "status": "Scheduled",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-07-06",
+      "procedure": "Cavity Filling",
+      "dentist": "Dr. Clark"
+    },
+    "services": [
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      },
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV8220",
+      "total_amount": 204.95,
+      "paid_amount": 94.72,
+      "balance_due": 110.23,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "MC234753882",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 190,
+      "insurance_remaining": 1810
+    }
+  },
+  {
+    "patient_id": "P042",
+    "name": "Thomas Wright",
+    "gender": "Male",
+    "age": 60,
+    "date_of_birth": "1965-05-15",
+    "phone": "+1 217-194-3442",
+    "email": "thomas.wright@example.com",
+    "address": "742 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A5149",
+      "date": "2025-10-26",
+      "time": "12:00 AM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Extraction",
+      "status": "Completed",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2025-01-07",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7307",
+      "total_amount": 124.19,
+      "paid_amount": 43.84,
+      "balance_due": 80.35,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "DD524617986",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 737,
+      "insurance_remaining": 1263
+    }
+  },
+  {
+    "patient_id": "P043",
+    "name": "Linda Doe",
+    "gender": "Female",
+    "age": 59,
+    "date_of_birth": "1966-04-21",
+    "phone": "+1 543-171-4954",
+    "email": "linda.doe@example.com",
+    "address": "524 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Penicillin"
+      ],
+      "previous_conditions": [],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A1145",
+      "date": "2025-04-27",
+      "time": "12:30 PM",
+      "availability": "Available",
+      "dentist": "Dr. Martinez",
+      "procedure": "Braces Adjustment",
+      "status": "Cancelled",
+      "treatment_status": "Completed"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-10-11",
+      "procedure": "Teeth Cleaning",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9103",
+      "total_amount": 132.17,
+      "paid_amount": 100.14,
+      "balance_due": 32.03,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Delta Dental",
+      "insurance_policy_number": "MC786593758",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1111,
+      "insurance_remaining": 889
+    }
+  },
+  {
+    "patient_id": "P044",
+    "name": "Charles King",
+    "gender": "Female",
+    "age": 47,
+    "date_of_birth": "1978-04-15",
+    "phone": "+1 206-473-8689",
+    "email": "charles.king@example.com",
+    "address": "482 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [
+        "Hypertension",
+        "Tooth Sensitivity"
+      ],
+      "current_medications": [
+        "Ibuprofen"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A6187",
+      "date": "2025-08-28",
+      "time": "10:30 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Lee",
+      "procedure": "Teeth Cleaning",
+      "status": "Completed",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Braces adjustment successful",
+    "last_visit": {
+      "date": "2024-11-14",
+      "procedure": "Extraction",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7213",
+      "total_amount": 103.53,
+      "paid_amount": 13.37,
+      "balance_due": 90.16,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "BC912051234",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 732,
+      "insurance_remaining": 1268
+    }
+  },
+  {
+    "patient_id": "P045",
+    "name": "Maria Walker",
+    "gender": "Female",
+    "age": 68,
+    "date_of_birth": "1957-06-03",
+    "phone": "+1 957-193-7362",
+    "email": "maria.walker@example.com",
+    "address": "719 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A5776",
+      "date": "2025-05-30",
+      "time": "9:30 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Clark",
+      "procedure": "Extraction",
+      "status": "Cancelled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2025-01-18",
+      "procedure": "Root Canal",
+      "dentist": "Dr. Clark"
+    },
+    "services": [
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      },
+      {
+        "service_id": "S001",
+        "service_name": "Teeth Cleaning",
+        "cost": 100.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9343",
+      "total_amount": 178.74,
+      "paid_amount": 3.82,
+      "balance_due": 174.92,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "MC833028128",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 755,
+      "insurance_remaining": 1245
+    }
+  },
+  {
+    "patient_id": "P046",
+    "name": "David Walker",
+    "gender": "Male",
+    "age": 26,
+    "date_of_birth": "1999-02-06",
+    "phone": "+1 712-857-1133",
+    "email": "david.walker@example.com",
+    "address": "192 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A7721",
+      "date": "2025-11-03",
+      "time": "9:30 PM",
+      "availability": "Available",
+      "dentist": "Dr. Martinez",
+      "procedure": "Braces Adjustment",
+      "status": "Completed",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Wisdom tooth extraction soon",
+    "last_visit": {
+      "date": "2024-04-29",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Martinez"
+    },
+    "services": [
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV7379",
+      "total_amount": 189.65,
+      "paid_amount": 157.65,
+      "balance_due": 32.0,
+      "payment_status": "Partial",
+      "payment_method": "Credit Card"
+    },
+    "insurance": {
+      "insurance_provider": "Blue Cross",
+      "insurance_policy_number": "CG708842958",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1460,
+      "insurance_remaining": 540
+    }
+  },
+  {
+    "patient_id": "P047",
+    "name": "Susan Johnson",
+    "gender": "Female",
+    "age": 33,
+    "date_of_birth": "1992-02-03",
+    "phone": "+1 385-901-5171",
+    "email": "susan.johnson@example.com",
+    "address": "405 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [],
+      "previous_conditions": [
+        "Gum Disease",
+        "Hypertension"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A6483",
+      "date": "2025-12-16",
+      "time": "12:30 PM",
+      "availability": "Available",
+      "dentist": "Dr. Emily Carter",
+      "procedure": "Cavity Filling",
+      "status": "Completed",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Tooth sensitivity, monitor diet",
+    "last_visit": {
+      "date": "2024-06-05",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Emily Carter"
+    },
+    "services": [
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      },
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV9244",
+      "total_amount": 72.0,
+      "paid_amount": 28.29,
+      "balance_due": 43.71,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "HF284765173",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 1433,
+      "insurance_remaining": 567
+    }
+  },
+  {
+    "patient_id": "P048",
+    "name": "Patricia Harris",
+    "gender": "Female",
+    "age": 23,
+    "date_of_birth": "2002-09-02",
+    "phone": "+1 123-312-4045",
+    "email": "patricia.harris@example.com",
+    "address": "694 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Pollen"
+      ],
+      "previous_conditions": [],
+      "current_medications": [
+        "None"
+      ]
+    },
+    "appointments": {
+      "appointment_id": "A2054",
+      "date": "2025-04-13",
+      "time": "12:00 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Clark",
+      "procedure": "Braces Adjustment",
+      "status": "Completed",
+      "treatment_status": "Scheduled"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-12-01",
+      "procedure": "Extraction",
+      "dentist": "Dr. Clark"
+    },
+    "services": [
+      {
+        "service_id": "S004",
+        "service_name": "Root Canal Treatment",
+        "cost": 600.0
+      },
+      {
+        "service_id": "S003",
+        "service_name": "Dental Filling",
+        "cost": 150.0
+      },
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV8362",
+      "total_amount": 90.56,
+      "paid_amount": 63.25,
+      "balance_due": 27.31,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "HealthFirst",
+      "insurance_policy_number": "CG340140032",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 214,
+      "insurance_remaining": 1786
+    }
+  },
+  {
+    "patient_id": "P049",
+    "name": "Joseph Wilson",
+    "gender": "Male",
+    "age": 68,
+    "date_of_birth": "1957-10-27",
+    "phone": "+1 136-674-3730",
+    "email": "joseph.wilson@example.com",
+    "address": "804 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "Penicillin"
+      ],
+      "previous_conditions": [],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A6222",
+      "date": "2025-06-06",
+      "time": "8:30 PM",
+      "availability": "Unavailable",
+      "dentist": "Dr. Brown",
+      "procedure": "Teeth Cleaning",
+      "status": "Cancelled",
+      "treatment_status": "Ongoing"
+    },
+    "note": "Gum inflammation, prescribe rinse",
+    "last_visit": {
+      "date": "2024-09-11",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Brown"
+    },
+    "services": [
+      {
+        "service_id": "S005",
+        "service_name": "Braces Consultation",
+        "cost": 50.0
+      },
+      {
+        "service_id": "S008",
+        "service_name": "Gum Surgery",
+        "cost": 500.0
+      },
+      {
+        "service_id": "S007",
+        "service_name": "Dental X-Ray",
+        "cost": 80.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV8746",
+      "total_amount": 212.4,
+      "paid_amount": 116.7,
+      "balance_due": 95.7,
+      "payment_status": "Partial",
+      "payment_method": "Debit Card"
+    },
+    "insurance": {
+      "insurance_provider": "MediCare",
+      "insurance_policy_number": "BC674521657",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 506,
+      "insurance_remaining": 1494
+    }
+  },
+  {
+    "patient_id": "P050",
+    "name": "Jennifer Young",
+    "gender": "Male",
+    "age": 50,
+    "date_of_birth": "1975-06-06",
+    "phone": "+1 632-560-9230",
+    "email": "jennifer.young@example.com",
+    "address": "595 Main St, Springfield, IL, USA",
+    "medical_history": {
+      "allergies": [
+        "None"
+      ],
+      "previous_conditions": [
+        "Gum Disease"
+      ],
+      "current_medications": []
+    },
+    "appointments": {
+      "appointment_id": "A7333",
+      "date": "2026-02-02",
+      "time": "8:00 PM",
+      "availability": "Available",
+      "dentist": "Dr. Lee",
+      "procedure": "Teeth Cleaning",
+      "status": "Cancelled",
+      "treatment_status": "Completed"
+    },
+    "note": "Braces adjustment successful",
+    "last_visit": {
+      "date": "2025-01-19",
+      "procedure": "Braces Adjustment",
+      "dentist": "Dr. Lee"
+    },
+    "services": [
+      {
+        "service_id": "S006",
+        "service_name": "Teeth Whitening",
+        "cost": 200.0
+      },
+      {
+        "service_id": "S002",
+        "service_name": "Tooth Extraction",
+        "cost": 400.0
+      }
+    ],
+    "billing": {
+      "invoice_id": "INV6968",
+      "total_amount": 267.96,
+      "paid_amount": 21.21,
+      "balance_due": 246.75,
+      "payment_status": "Partial",
+      "payment_method": "Cash"
+    },
+    "insurance": {
+      "insurance_provider": "Delta Dental",
+      "insurance_policy_number": "MC515666909",
+      "insurance_annual_limit": 2000,
+      "insurance_used": 867,
+      "insurance_remaining": 1133
+    }
+  }
+]
