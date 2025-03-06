@@ -36,7 +36,7 @@ const App = () => {
           <Route path="/new-invoice" element={<NewInvoice/>}/>
           <Route path="/view-invoice" element={<ViewInvoice/>}/>
           <Route path="/payment" element={<Payment/>}/>
-          <Route path="/settings" element={<Graph/>}/>
+          {/* <Route path="/settings" element={<Graph/>}/> */}
         </Routes>
         
         </TreatmentsContext.Provider>

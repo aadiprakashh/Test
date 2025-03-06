@@ -5,7 +5,7 @@ import { useState } from "react";
 const Doctor = () => {
   const patients = usePatients();
   const doctors = [
-    ...new Set(patients.map((patient) => patient.doctor)),
+    ...new Set(patients.slice(0,8).map((patient) => patient.doctor)),
   ];
   const docSpecialty = [...new Set(doctors.map((doctor) => doctor.specialty))];
   const [specialty, setSpeciality] = useState("");
