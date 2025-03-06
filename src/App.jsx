@@ -13,6 +13,8 @@ import ViewInvoice from "./pages/Billing/ViewInvoice";
 import Payment from "./pages/Billing/Payment";
 import Doctor from "./pages/Doctor/Doctor";
 import Graph from "./components/Graph";
+import PageNotFound from "./components/PageNotFound";
+import PageUnderConstruction from "./components/PageUnderConstruction";
 
 const App = () => {
   const treatments = [
@@ -36,7 +38,8 @@ const App = () => {
           <Route path="/new-invoice" element={<NewInvoice/>}/>
           <Route path="/view-invoice" element={<ViewInvoice/>}/>
           <Route path="/payment" element={<Payment/>}/>
-          {/* <Route path="/settings" element={<Graph/>}/> */}
+          <Route path="/settings" element={<PageUnderConstruction/>}/>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         
         </TreatmentsContext.Provider>
